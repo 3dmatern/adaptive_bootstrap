@@ -1,0 +1,1522 @@
+@font-face {
+    font-family: 'MuseoSansCyrl100';
+    src: url('../fonts/MuseoSansCyrl100.otf');
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl100Italic';
+    src: url('../fonts/MuseoSansCyrl100Italic.otf');
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl300';
+    src: url('../fonts/MuseoSansCyrl300.otf');
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl900';
+    src: url('../fonts/MuseoSansCyrl900.otf');
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: MuseoSansCyrl100, MuseoSansCyrl100Italic, MuseoSansCyrl300, MuseoSansCyrl900, sans-serif;
+}
+
+h1, h2, h3, p, i {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: MuseoSansCyrl900;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    padding-top: 90px;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-family: MuseoSansCyrl900;
+    font-size: 1.333rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА*/
+
+/* HEADER */
+
+#header {
+    background: url(../img/header/BG_header.jpg) no-repeat center top;
+    color: #fff;
+    padding-bottom: 130px;
+}
+
+.header__menu {
+    height: 77px;
+}
+
+.header__menu__link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0,733rem;
+    font-family: MuseoSansCyrl900;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.header__menu__link a:hover {
+    border: 0px solid #375e74;
+    background: #375e74;
+    border-radius: 5px;
+}
+
+.header__menu__phone {
+    position: relative;
+}
+
+.header__menu__phone_icon {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+}
+
+.header__menu__phone a {
+    text-decoration: none;
+    color: #fff;
+    font-family: MuseoSansCyrl900;
+    font-size: 1.067rem;
+}
+
+.header__menu__hamurger div {
+    width: 21px;
+    height: 4px;
+    margin-bottom: 3px;
+    background: #fff;
+}
+
+.header__menu__hamurger div:last-child {
+    margin-bottom: 0px;
+}
+
+.fa-phone {
+    color: #23aae2;
+    margin-right: 5px;
+    padding: 6px;
+    border: 1px dashed #23aae2;
+    border-radius: 50%;
+}
+
+.header__title {
+    margin: 204px 0 168px 0;
+    font-size: 6rem;
+    font-family: MuseoSansCyrl900;
+    text-transform: uppercase;
+    letter-spacing: 0.45em;
+    line-height: 80px;
+}
+
+.header__title span{
+    font-size: 3.4rem;
+    font-family: MuseoSansCyrl900;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.fa-angle-down {
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    padding: 14px 15px;
+}
+
+.header__arrowLink a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* advantage - Наши преимущества */
+
+.advantage__item {
+    margin: 65px 0 100px 0;
+    background: #f4f4f4;
+    padding: 55px 50px;
+    height: 370px;
+}
+
+.advantage__item img{
+    margin-bottom: 28px;
+}
+
+.advantage__item h3::after {
+    content: '';
+    display: block;
+    background: #c6c6c6;
+    width: 27px;
+    height: 1px;
+    margin: 17px auto 20px auto;
+}
+
+.advantage__item p {
+    font-size: 1.133rem;
+    font-family: MuseoSansCyrl100;
+}
+
+/* moving - Переезд в Болгарию */
+
+#moving {
+    background: url(../img/header/BG_move_Bulgaria.jpg);
+    color: #fff;
+    padding-bottom: 90px;
+}
+
+.moving__quote {
+    margin: 20px 0 40px 0;
+    font-size: 1.2rem;
+    font-family: MuseoSansCyrl100Italic;
+}
+
+.moving__quote span {
+    font-size: 0.933rem;
+    letter-spacing: 0.1em;
+    font-family: MuseoSansCyrl900;
+    text-transform: uppercase;
+}
+
+.moving__room {
+    margin-bottom: 50px;
+    border: 1px dashed #f4f4f4;
+    padding: 40px 50px;
+    position: relative;
+}
+
+.fa-caret-down {
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+.moving__room_up {
+    position:absolute;
+    top: -17px;
+    right: 48%;
+    background: #263d4ce1;
+}
+
+.moving__room_down {
+    position: absolute;
+    bottom: -17px;
+    right: 48%;
+    background: #263d4ce1;
+}
+
+.moving__room__text {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.moving__room__text p {
+    font-size: 1.267rem;
+}
+
+.moving__room__text b {
+    font-family: MuseoSansCyrl900;
+    font-size: 1.533rem;
+}
+
+.moving__answer {
+    margin-bottom: 50px;
+}
+
+.moving__answer p {
+    font-size: 1.2rem;
+}
+
+.moving__answer b {
+    font-size: 2.467rem;
+    font-family: MuseoSansCyrl900;
+    text-transform: uppercase;
+}
+
+.moving__btn_a {
+    display: block;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 1rem;
+}
+
+.moving__btn_a:hover {
+    background: #fff;
+    color: #375e74;
+}
+
+/* services - Услуги */
+
+#services {
+    background: url(../img/header/BG_city.png) no-repeat center bottom;
+    padding-bottom: 100px;
+}
+
+.services__title {
+    margin-bottom: 130px;
+}
+
+.services__room {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.services__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.services__img_1 {
+    top: -70px;
+    left: 25%;
+}
+
+.services__img_2 {
+    top: -140px;
+    left: 39%;
+    z-index: 0;
+}
+
+.services__img_3 {
+    top: -70px;
+    right: 25%;
+}
+
+.services__img_4 {
+    top: 50%;
+    right: 46%;
+    z-index: 0;
+}
+
+.services__room__item {
+    background: #f4f4f4;
+    padding: 71px 32px 43px 32px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 10px rgba(104, 104, 104, 0.5);
+}
+
+.services__room__item h3 {
+    margin-bottom: 10px;
+}
+
+.services__room__item:last-child {
+    padding: 43px 32px;
+}
+
+.services__room__item p {
+    font-size: 1.133rem;
+}
+
+.services__btn {
+    display: block;
+    padding: 20px 25px;
+    border: 2px solid #23aae2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #23aae2;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 1rem;
+}
+
+.services__btn:hover {
+    background: #23aae2;
+    color: #fff;
+}
+
+
+/*Section review - отзывы*/
+
+.review__form {
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.review__form__btn {
+    position: relative;
+}
+
+.review__form__btn_left {
+    position: absolute;
+    top: 87px;
+    left: 15%;
+    text-decoration: none;
+    color: #23aae2;
+    border: 1px dashed #23aae2;
+    border-radius: 50%;
+    padding: 6px 13px;
+}
+
+.review__form__btn_right {
+    position: absolute;
+    top: 87px;
+    right: 20%;
+    text-decoration: none;
+    color: #23aae2;
+    border: 1px dashed #23aae2;
+    border-radius: 50%;
+    padding: 6px 13px;
+}
+
+.review__form__room {
+    position: relative;
+    padding: 44px 39px 45px 128px;
+    box-shadow: 0 2px 10px rgba(104, 104, 104, 0.5);
+}
+
+.review__form__room img {
+    position: absolute;
+    left: -8%;
+}
+
+.review__form__room_name {
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 1.07rem;
+}
+
+.review__form__room a {
+    padding: 5px 0;
+    color: #64a8df;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 0.8rem;
+}
+
+.review__form__room a:hover {
+    text-decoration: underline;
+    color: #64a8df;
+}
+
+.review__form__room_city {
+    color: #64a8df;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl100;
+    font-size: 0.8rem;
+}
+
+.review__form__room_text {
+    margin-top: 27px;
+    font-family: MuseoSansCyrl100Italic;
+    font-size: 0.933rem;
+}
+
+.review__slider {
+    margin-top: 50px;
+}
+
+.review__slider__circle {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 1px dashed #23aae2;
+}
+
+.review__slider__circle:hover {
+    background: #23aae2;
+}
+
+
+/*Section question - вопросы*/
+
+#question {
+    background: url(../img/header/BG_consultation.jpg) no-repeat center;
+    color: #fff;
+}
+
+.question__title {
+    padding-top: 70px;
+}
+
+.question__text {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.question__arrow {
+    margin: 25px 0 30px 0;
+}
+
+.question__arrow__down {
+    background: #23a9e2b2;
+}
+
+.question__form input {
+    width: 100%;
+    height: 65px;
+    padding: 0 35px;
+    margin-bottom: 10px;
+    background: #73c1fd;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+
+.question__form ::placeholder {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl300;
+    font-size: 0.867rem;
+    letter-spacing: 0.1em;
+}
+
+.question__form input:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(104, 104, 104, 0.5);
+}
+
+.question_btn {
+    width: 100%;
+    height: 70px;
+    margin: 10px 0 56px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: none;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.question_btn:hover {
+    background: #fff;
+    color: #65b1f2;
+}
+
+/* footer */
+
+#footer {
+    background: #23aae2;
+    height: 90px;
+    color: #fff;
+    padding-top: 16px;
+}
+
+.footer__law {
+    font-size: 0.933rem;
+}
+
+.footer__link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.933rem;
+}
+
+.footer__link a:hover {
+    text-decoration: underline;
+}
+
+.footer__phone {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+}
+
+.footer__phone i {
+    color: #fff;
+    padding: 7px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+}
+
+/* СТРАНИЦА О КОМПАНИИ */
+
+    /* header */
+
+.header__title_company {
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 3.4rem;
+    letter-spacing: 0.5em;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+    /* Партнёры */
+
+#partners {
+    padding: 60px 0;
+    height: 1150px;
+    background: #f7f7f7;
+}
+
+.partners {
+    position: relative;
+}
+
+.partners__info {
+    position: absolute;
+    top: -150px;
+    background: #fff;
+    padding: 60px 0;
+    box-shadow: 0 0 20px rgba(112, 110, 110, 0.801);
+}
+
+.partners__info__qute {
+    font-family: MuseoSansCyrl100;
+    font-size: 1.2rem;
+}
+
+.partners__info__qute span {
+    font-family: MuseoSansCyrl900;
+    font-size: 1.2rem;
+}
+
+.partners__info__title {
+    margin: 60px 0;
+    text-transform: uppercase;
+}
+
+.partners__info__ten {
+    line-height: 30px;
+    font-family: MuseoSansCyrl900;
+    font-size: 2.6rem;
+    color: #23aae2;
+}
+
+.partners__info__ten span {
+    font-family: MuseoSansCyrl900;
+    font-size: 1rem;
+    color: #000;
+}
+
+.partners__info__text {
+    font-family: MuseoSansCyrl100;
+    font-size: 1.267rem;
+    letter-spacing: 0.6em;
+    color: #bdbdbd;
+}
+
+.partners__info__new {
+    line-height: 35px;
+    font-family: MuseoSansCyrl900;
+    font-size: 2rem;
+    color: #23aae2;
+}
+
+.partners__info__new span {
+    font-family: MuseoSansCyrl900;
+    font-size: 2rem;
+    color: #000;
+}
+
+.partners__info__done {
+    background: #23aae2;
+    width: 100%;
+    color: #fff;
+    font-family: MuseoSansCyrl900;
+    font-size: 1.533rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 30px 0;
+}
+
+.partners__title {
+    margin-bottom: 65px;
+}
+
+.partners__info__card {
+    height: 525px;
+    background: #f0eded;
+    padding: 37px 33px;
+    font-size: 1.067rem;
+}
+
+.partners__info__card img {
+    margin-bottom: 30px;
+}
+
+.partners__info__card h3 {
+    font-size: 1.4rem;
+    text-transform: none;
+}
+
+.partners__info__card h3::after {
+    content: '';
+    display: block;
+    background: #696868;
+    width: 40px;
+    height: 1px;
+    margin: 15px auto 20px auto;
+}
+
+
+/* СТРАНИЦА НЕДВИЖИМОСТЬ И ПЕРЕЕЗД */
+
+/* header */
+
+.header__title_move {
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 3.4rem;
+    letter-spacing: 0.2em;
+    margin-top: 75px;
+    margin-bottom: 55px;
+}
+
+/* move */
+
+#move {
+    background: #f7f7f7;
+    height: 750px;
+}
+
+.move {
+    position: relative;
+}
+
+.move__info {
+    background: #fff;
+    position: absolute;
+    top: -95px;
+    padding: 45px 30px 65px 30px;
+}
+
+.move__info_title {
+    padding: 0 110px;
+    font-size: 1.133rem;
+    margin-bottom: 55px;
+}
+
+.move__info_title span {
+    font-family: MuseoSansCyrl900;
+    font-size: 1.133rem;
+}
+
+.move__info__card_1 p {
+    padding: 0 40px;
+    font-size: 1.067rem;
+}
+
+.move__info__card_1 img {
+    margin-bottom: 110px;
+}
+
+.move__info__card_2 p {
+    padding: 30px 40px 0 40px;
+    font-size: 1.067rem;
+    margin-bottom: 55px;
+}
+
+
+/* СТРАНИЦА КОНТАКТЫ*/
+
+.header__title_contact {
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 3.4rem;
+    letter-spacing: 0.2em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* contact */
+
+#contact {
+    background: #f7f7f7;
+    height: 700px;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact__info {
+    background: #fff;
+    position: absolute;
+    top: -95px;
+    padding: 45px 30px 65px 30px;
+}
+
+.contact__info_title {
+    font-size: 1.133rem;
+    margin-bottom: 55px;
+}
+
+.contact__info__item {
+    padding-top: 110px;
+}
+
+
+.contact__info__item span {
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl900;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-size: 1.067rem;
+    padding-left: 50px;
+}
+
+.contact__info__item p {
+    font-size: 1.067rem;
+    padding-left: 50px;
+}
+
+.contact__info__item_phone {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.contact__info__item_phone img {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.contact__info__item_email {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.contact__info__item_email img {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.contact__info__item_skype {
+    position: relative;
+}
+
+.contact__info__item_skype img {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.contact__info__form {
+    background: #23aae2;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.contact__info__form h2 {
+    font-family: MuseoSansCyrl900;
+    font-size: 1.667rem;
+    padding-top: 0;
+}
+
+.contact__info__form span {
+    font-family: MuseoSansCyrl900;
+    font-size: 1.333rem;
+}
+
+.contact__info__form p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+}
+
+.contact_btn {
+    margin-bottom: 0;
+}
+
+/* Медиа запросы */
+
+/* Главная страница */
+
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+
+    /*Header*/
+
+    .header__menu__link, .header__menu__phone {
+        display: none;
+    }
+
+    .header__menu__hamurger div:last-child {
+        margin-bottom: 0px;
+    }
+
+    .header__title {
+        margin: 215px 0 150px 0;
+        font-size: 3.133rem;
+        letter-spacing: 0.20em;
+    }
+    
+    .header__title span{
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    /*Преимущества*/
+
+    .advantage__item {
+        margin-bottom: 0px;
+    }
+
+    .advantage__item_2 {
+        margin-top: 15px;
+    }
+    .advantage__item_3 {
+        margin-top: 15px;
+        margin-bottom: 90px;
+        padding: 55px 50px;
+    }
+
+    /*Переезд*/
+
+    #moving {
+        background: #2b4458;
+    }
+
+    .moving__room_up {
+        top: -17px;
+        right: 47%;
+    }
+    
+    .moving__room_down {
+        bottom: -17px;
+        right: 47%;
+    }
+
+    /*Недвижимость и транс. услуги*/
+
+    .services__img_1 {
+        top: -70px;
+        left: 10%;
+    }
+    
+    .services__img_2 {
+        top: -140px;
+        left: 30%;
+    }
+    
+    .services__img_3 {
+        top: -70px;
+        right: 10%;
+    }
+    
+    .services__img_4 {
+        top: 54%;
+        right: 44%;
+    }
+
+    /*Отзывы*/
+    
+    .review__form__btn_left, .review__form__btn_right {
+        display: none;
+    }
+
+    .review__form__room {
+        padding: 89px 35px 28px 35px;
+    }
+
+    .review__form__room img {
+        top: -20%;
+        left: 35%;
+    }
+  
+    /*Section question - вопросы*/
+
+    .question__title {
+        padding-top: 70px;
+    }
+
+    .question__arrow {
+        margin: 20px 0 10px 0;
+    }
+
+    .question_btn {
+        margin-bottom: 53px;
+    }
+
+    /* footer */
+
+    .header__menu__phone_footer, .footer__link {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /*Header*/
+
+    .header__menu__link {
+        display: none;
+    }
+
+    .header__menu__phone_icon {
+        left: -3%;
+    }
+
+    .header__title {
+        margin: 220px 0 150px 0;
+        font-size: 4.267rem;
+
+    }
+    
+    .header__title span{
+        font-size: 2.933rem;
+    }
+
+    /*Преимущества*/
+
+    .advantage__item {
+        margin-bottom: 20px;
+        padding: 55px 20px;
+    }
+
+    .advantage__item_3 {
+        margin-top: 0px;
+        margin-bottom: 90px;
+        padding: 55px 180px;
+    }
+
+    /*Переезд*/
+
+    /*Недвижимость и транс. услуги*/
+
+    .services__img_1 {
+        top: -70px;
+        left: 20%;
+    }
+    
+    .services__img_2 {
+        top: -140px;
+        left: 35%;
+    }
+    
+    .services__img_3 {
+        top: -70px;
+        right: 20%;
+    }
+    
+    .services__img_4 {
+        top: 55%;
+        right: 44%;
+    }
+
+    /*Отзывы*/
+
+    .review__form__room {
+        padding: 40px 40px 40px 105px;
+    }
+
+    .review__form__room img {
+        left: -8%;
+    }
+
+    .review__form__btn_left {
+        left: -70%;
+    }
+    
+    .review__form__btn_right {
+        right: -65%;
+    }
+  
+    /*Section question - вопросы*/
+    .question__title {
+        padding-top: 70px;
+    }
+
+    .question__arrow {
+        margin: 20px 0 10px 0;
+    }
+
+    .question_btn {
+        margin-bottom: 53px;
+    }
+
+    /* footer */
+
+    .header__menu__phone_footer {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*Header*/
+
+    .header__menu__link {
+        display: none;
+    }
+
+    .header__title {
+        margin: 220px 0 150px 0;
+        font-size: 4.267rem;
+    }
+    
+    .header__title span{
+        font-size: 2.933rem;
+    }
+
+    .header__menu__phone_icon {
+        left: -4%;
+    }
+
+    /*Преимущества*/
+
+    .advantage__item {
+        margin-bottom: 20px;
+        padding: 55px 20px;
+    }
+
+    .advantage__item_3 {
+        margin-top: 0px;
+        margin-bottom: 90px;
+        padding: 55px 250px;
+    }
+
+    /*Переезд*/
+
+    /*Недвижимость и транс. услуги*/
+
+    .services__img_1 {
+        top: -70px;
+        left: 25%;
+    }
+    
+    .services__img_2 {
+        top: -140px;
+        left: 38%;
+    }
+    
+    .services__img_3 {
+        top: -70px;
+        right: 25%;
+    }
+    
+    .services__img_4 {
+        top: 50%;
+        right: 46%;
+    }
+
+    /*Отзывы*/
+
+    .review__form__room {
+        padding: 40px 40px 40px 105px;
+    }
+
+    .review__form__room img {
+        left: -8%;
+    }
+
+    .review__form__btn_left {
+        left: 15%;
+    }
+    
+    .review__form__btn_right {
+        right: 20%;
+    }
+  
+    /*Section question - вопросы*/
+    .question__title {
+        padding-top: 70px;
+    }
+
+    .question__arrow {
+        margin: 20px 0 10px 0;
+    }
+
+    .question_btn {
+        margin-bottom: 53px;
+    }
+
+    /* footer */
+    .footer__phone {
+        left: -2%;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    /*Header*/
+
+    .header__menu__phone_icon {
+        left: -20%;
+    }
+
+    /* footer */
+    .footer__phone {
+        left: 5%;
+    }
+
+}
+
+
+/* О компании */
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+
+    /* header */
+
+    .header__title_company {
+        margin-top: 100px;
+        margin-bottom: 45px;
+        letter-spacing: 0.2em;
+    }
+
+    /* Партнёры */
+
+    #partners {
+        padding: 0 0;
+        height: auto;
+        background: none;
+    }
+
+    .partners {
+        position: unset;
+    }
+
+    .partners__info {
+        position: unset;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .partners__info__ten {
+        margin-bottom: 35px;
+    }
+
+    .partners__info__text {
+        margin-bottom: 35px;
+    }
+
+    .partners__info__card_1 {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .header__menu__phone_icon {
+        left: -3%;
+    }
+
+    .header__title_company {
+        margin-top: 100px;
+        margin-bottom: 35px;
+        letter-spacing: 0.2em;
+    }
+
+    /* Партнёры */
+
+    #partners {
+        padding: 0 0;
+        height: auto;
+        background: none;
+    }
+
+    .partners {
+        position: unset;
+    }
+
+    .partners__info {
+        position: unset;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .partners__info__card {
+        height: 600px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    .header__menu__phone_icon {
+        left: -3%;
+    }
+
+    .header__title_company {
+        margin-top: 100px;
+        margin-bottom: 35px;
+        letter-spacing: 0.2em;
+    }
+
+    /* Партнёры */
+
+    #partners {
+        padding: 0 0;
+        height: auto;
+        background: none;
+    }
+
+    .partners {
+        position: unset;
+    }
+
+    .partners__info {
+        position: unset;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .partners__info__card {
+        height: 600px;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    
+    #partners {
+        height: 1300px;
+    }
+
+    .partners__info__card {
+        height: 600px;
+    }
+
+}
+
+/* Недвижимость и переезд */
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+
+    .header__title_move {
+        font-size: 2.467rem;
+        letter-spacing: 0.1em;
+        margin-top: 110px;
+        margin-bottom: 50px;
+    }
+
+    /* move */
+
+    #move {
+        background: #fff;
+        height: auto;
+    }
+
+    .move {
+        position: unset;
+    }
+
+    .move__info {
+        position: unset;
+        top: 0;
+        padding: 45px 0 65px 0;
+    }
+
+    .move__info_title {
+        padding: 0 11.25px;
+        font-size: 1.133rem;
+        margin-bottom: 30px;
+    }
+
+    .move__info__card_1 p {
+        padding: 0 11.25px;
+        margin-bottom: 30px;
+    }
+
+    .move__info__card_1 img {
+        margin-bottom: 30px;
+    }
+
+    .move__info__card_2 {
+        position: relative;
+    }
+
+    .move__info__card_2 p {
+        padding: 330px 11.25px 0 11.25px;
+        margin-bottom: 0;
+    }
+
+    .move__info__card_2 img {
+        position: absolute;
+        top: 0;
+        left: 15%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* header */
+
+    .header__title_move {
+        font-size: 3.4rem;
+        letter-spacing: 0.3em;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    /* move */
+
+    #move {
+        background: #fff;
+        height: auto;
+    }
+
+    .move {
+        position: unset;
+    }
+
+    .move__info {
+        position: unset;
+        top: 0;
+        padding: 45px 0 70px 0;
+    }
+
+    .move__info_title {
+        padding: 0 11.25px;
+    }
+
+    .move__info__card_1 p {
+        padding: 0 11.25px;
+    }
+
+    .move__info__card_2 p {
+        padding: 30px 11.25px 0 11.25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    /* move */
+
+    #move {
+        background: #fff;
+    }
+
+    .move {
+        position: unset;
+    }
+
+    .move__info {
+        position: unset;
+        top: 0;
+        padding: 45px 0 70px 0;
+    }
+
+    .move__info_title {
+        padding: 0 11.25px;
+    }
+}
+
+/* Контакты */
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+
+    /* header */
+
+    .header__title_contact {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    /* contact */
+
+    #contact {
+        background: #fff;
+        height: 1350px;
+    }
+
+    .contact {
+        position: unset;
+    }
+
+    .contact__info {
+        position: unset;
+        top: 0;
+    }
+
+    .contact__info__item {
+        padding-top: 0;
+    }
+
+    .contact__info__item span {
+        padding-left: 0;
+    }
+    
+    .contact__info__item p {
+        padding-left: 0;
+    }
+    
+    .contact__info__item_phone {
+        margin-bottom: 40px;
+        padding-top: 70px;
+    }
+    
+    .contact__info__item_phone img {
+        top: 0;
+        left: 47.5%;
+    }
+    
+    .contact__info__item_email {
+        padding-top: 70px;
+        margin-bottom: 40px;
+    }
+    
+    .contact__info__item_email img {
+        top: 0;
+        left: 47%;
+    }
+    
+    .contact__info__item_skype {
+        padding-top: 70px;
+        margin-bottom: 40px;
+    }
+    
+    .contact__info__item_skype img {
+        top: 0;
+        left: 46.5%;
+    }
+
+    
+    .contact__info__form p {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* header */
+
+    .header__title_contact {
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+
+    /* contact */
+
+    #contact {
+        background: #fff;
+        height: 760px;
+    }
+
+    .contact {
+        position: unset;
+    }
+
+    .contact__info {
+        position: unset;
+        top: 0;
+    }
+
+    .contact_btn {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    #contact {
+        height: 760px;
+    }
+
+}
