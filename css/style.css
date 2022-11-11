@@ -525,7 +525,7 @@ h3 {
 .footer__phone {
     position: absolute;
     top: 20%;
-    left: -10%;
+    left: 10%;
 }
 
 .footer__phone i {
