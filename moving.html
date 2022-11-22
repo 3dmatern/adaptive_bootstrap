@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/b7c6351773.js" crossorigin="anonymous"></script>
+        <!-- CSS only -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <!-- Подключаем модальное окно -->
+        <!-- arcticModal -->
+    <link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal-0.3.css">
+        <!-- arcticModal theme -->
+    <link rel="stylesheet" href="js/arcticmodal/themes/simple.css">
+        <!-- Подключаем свои стили -->
     <link rel="stylesheet" href="css/style.css">
     <title>Adaptive Bootstrap</title>
 </head>
@@ -19,7 +26,7 @@
                         <img src="img/header/logo.png" alt="compass-travel">
                     </div>
                     <div class="col-3 col-md-4 col-lg-5 col-xl-8">
-                        <nav class="header__menu__link">
+                        <nav class="header__menu__link header__menu__link_2">
                             <a href="index.html">Главная</a>
                             <a href="company.html">О компании</a>
                             <a href="moving.html">Недвижимость и переезд</a>
@@ -28,8 +35,33 @@
                     </div>
                     <div class="col-3 col-md-4 col-lg-3 col-xl-2">
                         <div class="header__menu__phone">
-                            <div class="header__menu__phone_icon">
+                            <button class="header__menu__phone_icon" id="btn">
                                 <i class="fa-solid fa-phone"></i>
+                            </button>
+                            <div style="display: none;">
+                                <div class="box-modal" id="exampleModal">
+                                    <div class="box-modal_close arcticmodal-close">закрыть</div>
+                                    <h2 class="box-modal_title text-center">
+                                        Оставь контакты и мы перезвоним!
+                                    </h2>
+                                    <form action="php/api.php" method="post">
+                                        <div class="text-center" id="result_form"></div>
+                                        <div class="question__form">
+                                            <div class="col-12">
+                                                <input type="text" name="name" placeholder="Имя">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="email" name="email" placeholder="E-mail">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="tel" name="tel" placeholder="Телефон">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="submit" class="box-modal_btn" value="Заказать консультацию">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                             <div>
                                 <a href="tel:+749512321345">+7 (495) 12-321-345</a><br>
@@ -38,11 +70,11 @@
                         </div>
                     </div>
                     <div class="d-xl-none col-2 col-md-1 col-lg-1">
-                        <div class="header__menu__hamurger">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                        <button class="header__menu__hamurger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -116,20 +148,21 @@
                         <i class="fa-solid fa-caret-down question__arrow__down"></i>
                     </div>
                 </div>
-                <div class="question__form">
+                <div class="text-center" id="result_form_2"></div>
+                <form action="php/api.php" class="question__form" method="post">
                     <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
-                        <input type="text" placeholder="Имя">
+                        <input type="text" name="name" placeholder="Имя">
                     </div>
                     <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
-                        <input type="email" placeholder="E-mail">
+                        <input type="email" name="email" placeholder="E-mail">
                     </div>
                     <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
-                        <input type="tel" placeholder="Телефон">
+                        <input type="tel" name="tel" placeholder="Телефон">
                     </div>
-                </div>
-                <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
-                    <input type="button" class="question_btn" value="Заказать консультацию">
-                </div>
+                    <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                        <input type="submit" class="question_btn" value="Заказать консультацию">
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -148,16 +181,16 @@
                             2022 / Все права защищены
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="col-xl-3 col-md-4 col-lg-3 col-xl-3">
                         <div class="footer__link">
                             <a href="#">Политика конфиденциальности</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-xl-3">
                         <div class="header__menu__phone header__menu__phone_footer">
-                            <div class="footer__phone">
+                            <button class="footer__phone">
                                 <i class="fa-solid fa-phone"></i>
-                            </div>
+                            </button>
                             <div>
                                 <a href="tel:+749512321345">+7 (495) 12-321-345</a><br>
                                 <a href="tel:+749512321345">+7 (495) 12-321-345</a>
@@ -168,6 +201,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/b7c6351773.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
