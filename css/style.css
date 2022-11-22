@@ -109,7 +109,7 @@ h3 {
     text-transform: uppercase;
     font-family: MuseoSansCyrl900;
     font-size: 1rem;
-    color: #23aae2;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -131,15 +131,31 @@ h3 {
     font-size: 1.067rem;
 }
 
-.header__menu__hamurger div {
+.header__menu__hamurger {
+    border: none;
+    background: none;
+}
+.header__menu__hamurger span {
+    transition: all 0.3s;
+    display: block;
     width: 21px;
     height: 4px;
     margin-bottom: 3px;
     background: #fff;
 }
-
-.header__menu__hamurger div:last-child {
+.header__menu__hamurger span:last-child {
     margin-bottom: 0px;
+}
+.first {  /* переименуем .nav__hamurger:hover div:first-child в .first для работы скрипта*/
+    transform: translate(3px, 0px) rotate(45deg);
+    transform-origin: left top;
+}
+.middle {
+    transform: scale(0);
+}
+.last {
+    transform: translate(-3px, -15px) rotate(-45deg);
+    transform-origin: right bottom;
 }
 
 .fa-phone {
@@ -464,7 +480,7 @@ h3 {
     border-radius: 50%;
     border: 1px dashed;
     box-sizing: unset;
-    padding: 2px 1px 0 2px;
+    padding: 2px 2px 0 2px;
 }
 
 
@@ -473,6 +489,7 @@ h3 {
 #question {
     background: url(../img/header/BG_consultation.jpg) no-repeat center;
     color: #fff;
+    padding-bottom: 55px;
 }
 
 .question__title {
@@ -504,7 +521,6 @@ h3 {
     border-radius: 5px;
 }
 
-
 .question__form ::placeholder {
     color: #fff;
     text-transform: uppercase;
@@ -519,12 +535,7 @@ h3 {
 }
 
 .question_btn {
-    width: 100%;
-    height: 70px;
-    margin: 10px 0 56px 0;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    background: none;
+    margin-top: 10px;
     text-transform: uppercase;
     font-family: MuseoSansCyrl900;
     font-size: 1rem;
@@ -886,8 +897,16 @@ h3 {
         display: none;
     }
 
-    .header__menu__hamurger div:last-child {
-        margin-bottom: 0px;
+    .header__menu__link_2 {
+        position: absolute;
+        top: 14%;
+        right: 0;
+        background: #2386e2d2;
+        width: 30%;
+        border-radius: 10px;
+    }
+    .header__menu__link_2 a {
+        display: block;
     }
 
     .header__title {
@@ -964,7 +983,7 @@ h3 {
 
     /*Отзывы*/
     
-    .slick-prev, .slick-next {
+    .slick-prev, .slick-next, .slick-arrow {
         display: none;
     }
 
@@ -1011,14 +1030,21 @@ h3 {
         display: none;
     }
 
-    .header__menu__phone_icon {
-        left: -3%;
+    .header__menu__link_2 {
+        position: absolute;
+        top: 14%;
+        right: 0;
+        background: #2386e2d2;
+        width: 30%;
+        border-radius: 10px;
+    }
+    .header__menu__link_2 a {
+        display: block;
     }
 
     .header__title {
         margin: 220px 0 150px 0;
         font-size: 4.267rem;
-
     }
     
     .header__title span{
@@ -1101,6 +1127,18 @@ h3 {
         display: none;
     }
 
+    .header__menu__link_2 {
+        position: absolute;
+        top: 14%;
+        right: 0;
+        background: #2386e2d2;
+        width: 30%;
+        border-radius: 10px;
+    }
+    .header__menu__link_2 a {
+        display: block;
+    }
+
     .header__title {
         margin: 220px 0 150px 0;
         font-size: 4.267rem;
@@ -1176,6 +1214,9 @@ h3 {
 @media (min-width: 1200px) and (max-width: 1399.98px) {
 
     /*Header*/
+    .header__menu__link, .header__menu__phone {
+        display: block;
+    }
 
     .header__menu__phone_icon {
         left: -20%;
