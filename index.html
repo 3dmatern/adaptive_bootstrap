@@ -31,7 +31,7 @@
                         <img src="img/header/logo.png" alt="compass-travel">
                     </div>
                     <div class="col-3 col-md-4 col-lg-5 col-xl-8">
-                        <nav class="header__menu__link">
+                        <nav class="header__menu__link header__menu__link_2">
                             <a href="index.html">Главная</a>
                             <a href="company.html">О компании</a>
                             <a href="moving.html">Недвижимость и переезд</a>
@@ -49,8 +49,8 @@
                                     <h2 class="box-modal_title text-center">
                                         Оставь контакты и мы перезвоним!
                                     </h2>
-                                    <div class="text-center" id="result_form"></div>
-                                    <form action="" id="ajax_form" method="post">
+                                    <form action="php/api.php" method="post">
+                                        <div class="text-center" id="result_form"></div>
                                         <div class="question__form">
                                             <div class="col-12">
                                                 <input type="text" name="name" placeholder="Имя">
@@ -61,9 +61,9 @@
                                             <div class="col-12">
                                                 <input type="tel" name="tel" placeholder="Телефон">
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="button" class="box-modal_btn" id="ajax_btn" value="Заказать консультацию">
+                                            <div class="col-12">
+                                                <input type="submit" class="box-modal_btn" value="Заказать консультацию">
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -75,11 +75,11 @@
                         </div>
                     </div>
                     <div class="d-xl-none col-2 col-md-1 col-lg-1">
-                        <div class="header__menu__hamurger">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                        <button class="header__menu__hamurger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -322,7 +322,7 @@
                     </div>
                 </div>
                 <div class="text-center" id="result_form_2"></div>
-                <form class="question__form" id="ajax_form_2">
+                <form action="php/api.php" class="question__form" method="post">
                     <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
                         <input type="text" name="name" placeholder="Имя">
                     </div>
@@ -332,10 +332,10 @@
                     <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
                         <input type="tel" name="tel" placeholder="Телефон">
                     </div>
+                    <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                        <input type="submit" class="question_btn" value="Заказать консультацию">
+                    </div>
                 </form>
-                <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
-                    <input type="button" class="question_btn" id="ajax_btn_2" value="Заказать консультацию">
-                </div>
             </div>
         </div>
     </section>
